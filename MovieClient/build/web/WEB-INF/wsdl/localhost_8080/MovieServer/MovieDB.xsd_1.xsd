@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://movieDb/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://movieDb/">
+
+<xs:element name="db" type="tns:db"/>
+
+<xs:element name="dbResponse" type="tns:dbResponse"/>
+
+<xs:element name="movComp" type="tns:movComp"/>
+
+<xs:element name="movCompResponse" type="tns:movCompResponse"/>
+
+<xs:element name="movSearch" type="tns:movSearch"/>
+
+<xs:element name="movSearchResponse" type="tns:movSearchResponse"/>
+
+<xs:complexType name="movSearch">
+<xs:sequence>
+<xs:element name="movie_name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="movSearchResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="db">
+<xs:sequence>
+<xs:element name="movie_name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dbResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="movComp">
+<xs:sequence>
+<xs:element name="movie_1" type="xs:string" minOccurs="0"/>
+<xs:element name="movie_2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="movCompResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
