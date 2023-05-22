@@ -11,7 +11,11 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <style>
             body{
-                background-color: aqua;
+                background-color: blue;
+            }
+            img{
+                max-width:20vw;
+                min-width:20vh;
             }
         </style>
         <title>Details</title>
